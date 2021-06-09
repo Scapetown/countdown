@@ -42,10 +42,7 @@ export default defineComponent({
       const socket = io(config.wss.url);
 
       socket.on("connect", () => {
-        console.log("wss connected");
-
         socket.on("remaining", ({ data }: any) => {
-          console.log(dayjs.duration(data));
           this.remaining = new Date(data * 1000).toISOString().substr(11, 8); //format seconds to hh:mm:ss string
         });
       });
