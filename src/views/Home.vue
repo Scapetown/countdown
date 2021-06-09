@@ -26,7 +26,6 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import * as io from "socket.io-client";
-import dayjs from "@/utils/day";
 import config from "@/config/config";
 
 export default defineComponent({
