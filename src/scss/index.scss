@@ -1,0 +1,12 @@
+@import url("./fonts.scss");
+
+body {
+    margin: 0;
+    font-family: digital;
+    color: #ffffff;
+    background-color: black;
+}
+
+*, *::before, *::after {
+    margin: 0;
+}
